@@ -1,4 +1,4 @@
-# Real-Time UPI Transaction Risk Intelligence Platform
+# UPI Transaction Risk Intelligence Platform
 
 FraudSight has been upgraded from a notebook-style binary fraud classifier into a production-inspired fintech risk decisioning project. It now scores UPI transactions on a 0-100 risk scale, explains the drivers behind each score, profiles risky users and merchants, and exposes both a Streamlit fraud operations center and FastAPI scoring APIs.
 
@@ -14,11 +14,6 @@ The platform simulates the kind of payment-risk workflow used by payment compani
 6. Explain model output with SHAP when available, or a feature-importance fallback.
 7. Monitor transactions, users, merchants, and model performance in Streamlit.
 
-## Motivation
-
-Binary fraud labels are useful for model training, but payment operations teams need richer decision context. A transaction marked only as `Fraud = Yes` does not explain whether the risk is caused by a new device, merchant behavior, velocity, amount deviation, or failed attempts.
-
-Risk scoring is superior for real-time payments because it supports threshold-based authorization, step-up authentication, operational review queues, and clearer audit trails.
 
 ## Features
 
